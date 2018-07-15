@@ -2,12 +2,10 @@
 # PHP-FPM 7.1 Dockerfile
 #
 # https://github.com/phalcon/dockerfiles
-# https://github.com/Chialab/docker-php
+# https://gitlab.com/boxedcode/alpine-nginx-php-fpm
 #
 
-FROM chialab/php:7.1-fpm
-
-LABEL maintainer="Serghei Iakovlev <serghei@phalconphp.com>"
+FROM boxedcode/alpine-nginx-php-fpm:v1.7.5
 
 ENV PHALCON_VERSION=3.4.0
 
